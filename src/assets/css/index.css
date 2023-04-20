@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.translate-animation{
+    animation: translateItem 5s ease-in forwards;
+}
+
+.fadeOut{
+    animation: fadeOut 5s ease-in forwards;
+}
+
+.icyBg{
+    background-image: url('../images/icyBg.jpg');
+}
+
+
+@keyframes translateItem {
+    0%{
+        @apply translate-y-full;
+    }
+    100%{
+        @apply translate-y-[-200%];
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        @apply translate-y-[-200%];
+    }
+    100%{
+        @apply translate-y-0;
+    }
+}
