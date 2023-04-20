@@ -18,18 +18,19 @@
 
 @keyframes translateItem {
     0%{
-        @apply translate-y-full;
+        /* @apply translate-y-full; */
+        transform: translateY(100%);
     }
     100%{
-        @apply translate-y-[-200%];
+        transform: translateY(-200%);
     }
 }
 
 @keyframes fadeOut {
     0%{
-        @apply translate-y-[-200%];
+        transform: translateY(-200%);
     }
     100%{
-        @apply translate-y-0;
+        transform: translateY(0);
     }
 }
